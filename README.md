@@ -1,14 +1,14 @@
 # Personal Portfolio 🌐
 
-Repositori ini memuat dokumentasi proyek, karya, dan eksplorasi teknis yang dikembangkan sebagai representasi portofolio profesional saya.
+This repository contains project documentation, selected works, and technical explorations developed as a representation of my professional portfolio.
 
-Proyek ini dibangun dengan menitikberatkan pada penguasaan fondasi web (*native skill*):
-* **Pure Semantic HTML:** Menyusun struktur dokumen yang rapi, aksesibel, dan terstandarisasi.
-* **Modern Native CSS:** Merancang tampilan serta tata letak yang sepenuhnya adaptif dan responsif lintas perangkat tanpa mengandalkan *framework* atau *library styling* pihak ketiga.
-* **JavaScript & Anime.js:** Mengimplementasikan logika interaktivitas serta animasi antarmuka yang dinamis dan halus menggunakan bantuan Anime.js.
+This project emphasizes core web fundamentals (*native skills*):
+* **Pure Semantic HTML:** Structuring clean, accessible, and standardized web documents.
+* **Modern Native CSS:** Designing fully adaptive and responsive layouts across devices without relying on third-party CSS frameworks or styling libraries.
+* **Vanilla JavaScript:** Implementing interactivity logic, active scrollspy, scroll-reveal transitions, and native typewriter effects with zero external libraries.
 
 ---
 
 ### 🚀 Live Demo
-Kunjungi tautan berikut untuk melihat implementasi langsung:  
-👉 **[Lihat Portofolio](https://ansyahmf.github.io)**
+Visit the link below to view the live implementation:  
+👉 **[View Portfolio](https://ansyahmf.github.io)**
