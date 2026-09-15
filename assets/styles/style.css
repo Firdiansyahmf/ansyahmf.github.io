@@ -670,7 +670,6 @@ nav.scrolled img {
     --track-border: rgba(139, 92, 246, 0.19);
 }
 
-
 .gold {
     --track-color: #F59E0B;
     --track-bg: rgba(245, 158, 11, 1);
@@ -738,6 +737,7 @@ nav.scrolled img {
     grid-auto-flow: column;
     grid-auto-columns: 250px;
     overflow-x: scroll;
+    overflow-y: hidden;
     scrollbar-width: none;
     -ms-overflow-style: none;
 
@@ -787,20 +787,25 @@ nav.scrolled img {
 
 #getInTouch .cardItem .titleProject {
     font-family: SpaceGrotesk;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 600;
     line-height: 150%;
     color: var(--dark);
+    word-break: break-all;
 }
 
 #getInTouch .disGrid {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 
     grid-auto-flow: unset;
     grid-auto-columns: unset;
     overflow-x: unset;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    overflow-x: hidden;
+    padding: 0;
 
     -webkit-mask-image: unset;
     mask-image: unset;
@@ -809,10 +814,14 @@ nav.scrolled img {
 #getInTouch .cardItem .disFlex.st {
     flex-direction: row;
     gap: 16px;
+    align-items: center;
 }
 
 #getInTouch .cardItem .disFlex.nd {
     gap: 4px;
+    flex: 1;
+    min-width: 0;
+    max-width: 100%;
 }
 
 .cardItem .icon {
@@ -840,6 +849,27 @@ footer {
     background-color: var(--dark);
 }
 
+/* @ --- RESPONSIVE TO SMALLEST DEVICE */
+@media screen and (max-width: 366px) {
+    .myPhoto {
+        width: 60vw;
+        margin: 0;
+        justify-self: center;
+    }
+
+    #hero .textContain {
+        max-width: 100%;
+    }
+
+    #hero .textContain h1 {
+        flex-shrink: 1;
+        word-break: break-all;
+    }
+
+    #hero .box2 {
+        grid-template-columns: auto;
+    }
+}
 /* @ --- RESPONSIVE TO LARGEST DEVICE */
 @media screen and (min-width: 900px) {
     /* NAVBAR R */
@@ -880,7 +910,7 @@ footer {
     /* HERO CONTAINER R */
     #heroContain .breakpointForDesktop {
         max-width: 100vw;
-        margin: 0 auto;
+        padding-top: 10px;
     }
 
     #heroContain .subBreakpoint {
